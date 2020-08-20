@@ -1,9 +1,16 @@
 import React from "react";
-const FaceRecognition = ({lin})=>{
+import './f.css';
+const FaceRecognition = ({lin,box})=>{
+	const styleObject = { top:box.top_Row , 
+						right:box.right_Col,
+						bottom:box.bottom_Row,
+						left:box.left_Col }
+	console.log(styleObject);
  	return(
- 		<div className = "center ma2">
+		<div className = "center ma2">
  			<div className = "absolute ma2">
- 				<img src = {lin} alt='' width = '50%' height = '40%'/>
+ 				<img id ="image" src = {lin} alt='' width = '500px' height = 'auto' />
+ 				<div className = "bounding-box" style ={styleObject}></div>
  			</div>
  		</div>
  	);

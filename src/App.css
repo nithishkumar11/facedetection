@@ -1,6 +1,7 @@
 .center{
   display:flex;
   justify-content:center ;
+  flex-wrap:wrap;
 }
 body{
   text-align:center;
@@ -12,5 +13,4 @@ body{
   right:0;
   bottom:0;
   z-index:-1;
-  color:red;
 }
